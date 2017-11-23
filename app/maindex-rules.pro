@@ -1,3 +1,3 @@
 #
 
--keep class hehehehe
+-keep class me.wangyuwei.maindexwrapper.demo.Demo {*;}
