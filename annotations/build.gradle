@@ -1,23 +1,14 @@
-apply plugin: 'com.android.library'
+apply plugin: 'java'
+apply plugin: 'com.novoda.bintray-release'
 
-android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
 
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-dependencies {
-
+publish {
+    userOrg = 'wangyuwei'
+    groupId = 'me.wangyuwei'
+    artifactId = 'maindexwrapper-annotations'
+    publishVersion = '1.0.0'
+    desc = 'easy way to put classes in main dex.'
+    website = 'https://github.com/JeasonWong/MainDexWrapper'
 }

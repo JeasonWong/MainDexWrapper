@@ -37,5 +37,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.android.support:multidex:1.0.1'
-    compile project(':annotations')
+    compile 'me.wangyuwei:maindexwrapper-annotations:1.0.0'
 }

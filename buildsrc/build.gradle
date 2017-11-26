@@ -1,11 +1,37 @@
 apply plugin: 'groovy'
+apply plugin: 'com.novoda.bintray-release'
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/wangyuwei/maven'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
 
 dependencies {
     compile gradleApi()
     compile localGroovy()
     compile 'com.android.tools.build:gradle:2.3.3'
+    compile 'me.wangyuwei:maindexwrapper-annotations:1.0.0'
 }
 
 repositories {
     jcenter()
+    maven {
+        url 'https://dl.bintray.com/wangyuwei/maven'
+    }
+}
+
+publish {
+    userOrg = 'wangyuwei'
+    groupId = 'me.wangyuwei'
+    artifactId = 'maindexwrapper-plugin'
+    publishVersion = '1.0.0'
+    desc = 'easy way to put classes in main dex.'
+    website = 'https://github.com/JeasonWong/MainDexWrapper'
 }

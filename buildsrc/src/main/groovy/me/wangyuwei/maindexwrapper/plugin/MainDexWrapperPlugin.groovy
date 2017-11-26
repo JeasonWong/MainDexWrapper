@@ -11,7 +11,7 @@ import org.objectweb.asm.ClassWriter
 import java.util.jar.JarEntry
 import java.util.jar.JarFile
 
-import static me.wangyuwei.maindexwrapper.plugin.MainDexWrapperExtension.NAME;
+import static me.wangyuwei.maindexwrapper.plugin.MainDexWrapperExtension.NAME
 
 public class MainDexWrapperPlugin implements Plugin<Project> {
 
