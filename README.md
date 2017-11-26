@@ -7,7 +7,11 @@ One of the ways is similar to official realization：
 multiDexKeepProguard file('./maindex-rules.pro')
 ```
 
+Another way is similar to `@Keep `annotations in proguard.
+
 ### How to use
+
+#### build.gradle
 
 ```groovy
 apply plugin: 'me.wangyuwei.maindexwrapper'
@@ -16,11 +20,25 @@ mainDexWrapper {
     enable true
     keepFile file('./maindex-rules.pro')
 }
+
+compile project(':annotations')
 ```
+#### demo
 
-### TODO
+```java
+package me.wangyuwei.maindexwrapper.demo;
 
-- support @KeepMainDex
+import me.wangyuwei.maindexwrapper.annotations.KeepMainDex;
 
+@KeepMainDex
+public class Demo {
+
+    public class InnerClass {
+
+    }
+
+}
+
+```
 
 

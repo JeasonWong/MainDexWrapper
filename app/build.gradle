@@ -16,7 +16,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -37,4 +37,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.android.support:multidex:1.0.1'
+    compile project(':annotations')
 }

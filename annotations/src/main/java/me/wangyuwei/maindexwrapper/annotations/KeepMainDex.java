@@ -1,4 +1,4 @@
-package me.wangyuwei.maindexwrapper.annotatons;
+package me.wangyuwei.maindexwrapper.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
