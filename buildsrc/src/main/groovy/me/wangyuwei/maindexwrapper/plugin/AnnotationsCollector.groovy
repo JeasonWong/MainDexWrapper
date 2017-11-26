@@ -15,7 +15,7 @@ public class AnnotationsCollector {
         return COLLECTOR
     }
 
-    public static def reset() {
+    public static void reset() {
         COLLECTOR.clear()
     }
 

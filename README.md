@@ -26,6 +26,7 @@ compile project(':annotations')
 #### demo
 
 ```java
+// 1、add @KeepMainDex
 package me.wangyuwei.maindexwrapper.demo;
 
 import me.wangyuwei.maindexwrapper.annotations.KeepMainDex;
@@ -39,6 +40,12 @@ public class Demo {
 
 }
 
+```
+
+```keep
+# 2、add keep rules in a file.
+
+#-keep class me.wangyuwei.maindexwrapper.demo.Demo {*;}
 ```
 
 
