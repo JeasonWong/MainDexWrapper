@@ -22,6 +22,11 @@ multiDexKeepProguard file('./maindex-rules.pro')
 ```groovy
 
 buildscript {
+    repositories {
+        maven {
+            url 'https://dl.bintray.com/wangyuwei/maven'
+        }
+    }
     dependencies {
         classpath 'me.wangyuwei:maindexwrapper-plugin:1.0.0'
     }
