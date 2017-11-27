@@ -28,7 +28,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'me.wangyuwei:maindexwrapper-plugin:1.0.0'
+        classpath 'me.wangyuwei:maindexwrapper-plugin:1.0.1'
     }
 }
 

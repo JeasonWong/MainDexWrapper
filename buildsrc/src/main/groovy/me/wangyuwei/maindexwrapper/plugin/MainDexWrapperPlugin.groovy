@@ -28,7 +28,7 @@ public class MainDexWrapperPlugin implements Plugin<Project> {
                         // hook jarMerging task
                         String jarMergingTaskName = getJarMergingTaskName(variant);
                         def jarMergingTask = project.tasks.findByName(jarMergingTaskName)
-                        if (jarMergingTaskName) {
+                        if (jarMergingTask) {
                             jarMergingTask.doLast {
                                 jarMergingTask.outputs.files.each {
                                     if (it.isDirectory()) {

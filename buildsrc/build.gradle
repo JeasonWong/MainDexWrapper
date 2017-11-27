@@ -31,7 +31,7 @@ publish {
     userOrg = 'wangyuwei'
     groupId = 'me.wangyuwei'
     artifactId = 'maindexwrapper-plugin'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'easy way to put classes in main dex.'
     website = 'https://github.com/JeasonWong/MainDexWrapper'
 }
